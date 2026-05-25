@@ -22,7 +22,7 @@ public class Sender {
             int ch;
             while ((ch = reader.read()) != -1) {
                 char c = (char) ch;
-                if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+                if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c == ' ')) {
                     result.append(c);
                 }
             }
